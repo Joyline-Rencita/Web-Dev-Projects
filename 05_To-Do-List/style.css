@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,'popins';
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    background: linear-gradient(-95deg,#eac9ec,#ea98f1,#b84dc2);
+    background-size: 100%;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 65px;
+    margin-left: 470px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding: 20px;
+    width: 585px;
+    height: auto;
+    border-radius: 15px;
+    background-color: beige;
+    box-shadow: 2px 2px 3px 3px rgb(87, 90, 93);
+}
+
+.heading{
+    margin-left: 140px;
+    padding: auto;
+}
+
+
+input[type = text]{
+    width: 380px;
+    height: 35px;
+    margin-top: 27px;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #6c6c6c;
+}
+
+input[type=text]:focus {
+    border: 2px solid #121212;
+  }
+
+.text ul{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding: 10px;
+    width: 375px;
+    background-color:  #8f35b0;
+    color: white;
+    font-size: 19px;
+    padding: 7px;
+    text-align: left;
+    border-radius: 10px;
+ }
+ .text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+ }
+
+ button {
+    width: 100px;
+    height: 35px;
+    color: white;
+    margin-left: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #a205e5;
+    background: #6c2ba2;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: none;
+    color: black;
+    border: 2px solid #5d2394;
+}
+
+@media (max-width: 768px) {
+    .container {
+      margin-left: 10px; /* Adjust the margin for smaller screens */
+      width: 90%; /* Make the container wider for smaller screens */
+    }
+}
+@media (max-width: 480px) {
+    .container {
+      margin-left: 5px; /* Further adjust the margin for smaller screens */
+    }
+}
