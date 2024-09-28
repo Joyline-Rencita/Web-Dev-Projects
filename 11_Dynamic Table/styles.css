@@ -1,0 +1,130 @@
+table {
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 65%;
+}
+td, th, tr {
+    border: 1px solid #2a2929;
+    text-align: left;
+    padding: 8px;
+
+  }  
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Style for the search input */
+.search {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #888383;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    padding-left: 35px; /* To leave space for the icon */
+}
+.add{
+    width: 190px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888383;
+    font-size: 16px;
+}
+
+/* On focus, give the search bar a subtle shadow */
+.search:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-color: #888;
+}
+
+/* Style for the search icon */
+.fa-magnifying-glass {
+    position: relative;
+    left: -30px; /* Adjust positioning for icon */
+    top: 12px; /* Align vertically */
+    color: #323131;
+    cursor: pointer;
+}
+/* Add your CSS styles here */
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.search {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 35px;
+}
+.fa-magnifying-glass {
+    position: relative;
+    left: -30px;
+    top: 12px;
+    color: #888;
+    cursor: pointer;
+}
+.add-row {
+    margin-bottom: 20px;
+}
+.add-row input {
+    margin: 5px;
+}
+
+
+/* Style for the Add Row button */
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+}
+
+/* Add hover effect for the Add Row button */
+.add-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add focus effect for the Add Row button */
+.add-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px #4CAF50; /* Add subtle shadow */
+}
+
+/* Style for the Delete button */
+.delete-btn {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effect for the Delete button */
+.delete-btn:hover {
+    background-color: #fd0707; /* Darker red on hover */
+}
+
+/* Add focus effect for the Delete button */
+.delete-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px #ff4d4d; /* Add subtle shadow */
+}
