@@ -5,7 +5,6 @@
 //     icon.classList.toggle("open");
 // }
 
-
 const helpButton = document.getElementById('helpButton');
 const helpPopup = document.getElementById('helpPopup');
 
