@@ -326,7 +326,7 @@ header .navbar ul li a:hover {
 /* hero media queries starts*/
 @media (max-width: 450px) {
   .home .btn {
-    margin: 4rem 0;
+    margin: 5rem 0;
   }
   .socials {
     margin-top: 12rem;
@@ -344,7 +344,7 @@ header .navbar ul li a:hover {
 
 @media (max-width: 449px) {
   .home .btn {
-    margin: 4rem 0;
+    margin: 5rem 0;
   }
   .socials {
     margin-top: 10rem;
