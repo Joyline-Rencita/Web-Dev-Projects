@@ -352,7 +352,7 @@ header .navbar ul li a:hover {
   .home .image img {
     width: 50%; /* Reduce image size */
     margin-top: -4rem; /* Adjust margin to reduce overlap */
-    margin-left: 4rem; /* Adjust left margin for better centering */
+    margin-left: 10rem; /* Adjust left margin for better centering */
   }
   .home .content p {
     font-size: 2rem;
