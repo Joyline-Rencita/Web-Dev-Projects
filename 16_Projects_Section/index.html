@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+        
+        <!-- Buttons Wrapper -->
+        <div class="buttons-wrapper">
+            <div class="buttons">
+                <button onclick="showProject('all')">All Projects</button>
+                <button onclick="showProject('fullstack')">Full Stack</button>
+                <button onclick="showProject('ml')">Machine Learning</button>
+                <button onclick="showProject('android')">Android Apps</button>
+                <button onclick="showProject('react')">React Projects</button>
+                <button onclick="showProject('basicweb')">Basic Web</button>
+            </div>
+        </div>
+
+        <!-- Project Wrapper -->
+        <div class="project-wrapper">
+            <!-- Project Card -->
+            <div class="project-card all fullstack">
+                <div class="project-image">
+                    <img src="x.png" alt="Project 1">
+                    <div class="project-overlay">
+                        <button class="icon-btn">🔗</button>
+                        <button class="icon-btn">🎥</button>
+                    </div>
+                </div>
+                <h2>Instagram MERN</h2>
+                <p>Tech Stack: ReactJS, Redux, NodeJS, MongoDB, TailwindCSS</p>
+            </div>
+
+            <!-- Additional Project Cards (Copy and modify as needed) -->
+            <div class="project-card all react">
+                <div class="project-image">
+                    <img src="x.png" alt="Project 2">
+                    <div class="project-overlay">
+                        <button class="icon-btn">🔗</button>
+                        <button class="icon-btn">🎥</button>
+                    </div>
+                </div>
+                <h2>ResumeGen</h2>
+                <p>Tech Stack: JavaScript, ReactJS, Chakra UI, ContextAPI</p>
+            </div>
+
+            <!-- Additional Project Cards (Copy and modify as needed) -->
+            <div class="project-card all react">
+                <div class="project-image">
+                    <img src="x.png" alt="Project 3">
+                    <div class="project-overlay">
+                        <button class="icon-btn">🔗</button>
+                        <button class="icon-btn">🎥</button>
+                    </div>
+                </div>
+                <h2>ResumeGen</h2>
+                <p>Tech Stack: JavaScript, ReactJS, Chakra UI, ContextAPI</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script to Filter Projects Based on Selection -->
+    <script src="app.js"></script>
+</body>
+</html>
