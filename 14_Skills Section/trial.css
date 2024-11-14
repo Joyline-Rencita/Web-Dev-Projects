@@ -1,0 +1,198 @@
+/* Existing Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 30px 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0 40px;
+}
+/* Additional styling for the buttons wrapper */
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.buttons button {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #7d3cff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #5b2c9a;
+    transform: scale(1.05);
+}
+.skills-wrapper {
+    margin-top: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    font-size: 1em;
+    color: #333;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    
+    .skill {
+        width: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+
+    .buttons button {
+        padding: 8px 18px;
+        font-size: 0.85em;
+    }
+    
+    .skill {
+        width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .buttons button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .skills-container {
+        gap: 20px;
+    }
+    
+    .skill {
+        width: 70px;
+    }
+
+    .skill img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill p {
+        font-size: 0.9em;
+    }
+}
+
+/* Additional Styles for Small Screens (Max Width 450px) */
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .buttons {
+        /* gap: 8px; */
+        grid-template-columns: 1fr;
+    }
+
+    .buttons button {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+    
+    .skill {
+        width: 60px;
+    }
+
+    .skill img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skill p {
+        font-size: 0.8em;
+    }
+}
