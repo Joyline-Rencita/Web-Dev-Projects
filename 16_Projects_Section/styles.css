@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #e7e7e7;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 30px 0;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0 40px;
+}
+
+.buttons button {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    /* width: 100px; */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #7d3cff;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #5b2c9a;
+    transform: scale(1.05);
+}
+
+/* Project Cards Styling */
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    position: relative;
+}
+
+.project-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px;
+}
+
+p {
+    color: #777;
+    margin: 0 15px 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .buttons button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .buttons button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons button {
+        width: 100%;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
