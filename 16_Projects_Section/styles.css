@@ -159,6 +159,10 @@ h1 {
         flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
         max-width: calc(33.333% - 20px);
     }
+    /* .filter-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 buttons per row 
+    } */
 }
 
 /* Medium screens (Tablets in landscape mode) */
@@ -166,6 +170,10 @@ h1 {
     .project-card {
         flex: 1 1 calc(50% - 20px); /* 2 cards per row */
         max-width: calc(50% - 20px);
+    }
+    .filter-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
     }
 }
 
@@ -175,6 +183,10 @@ h1 {
         flex: 1 1 100%; /* 1 card per row */
         max-width: 100%;
     }
+    .filter-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
+    }
 }
 
 /* Extra small screens (Phones) */
@@ -182,6 +194,10 @@ h1 {
     .project-card {
         flex: 1 1 100%; /* 1 card per row */
         max-width: 100%;
+    }
+    .filter-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
     }
 }
 /* Animations  */
