@@ -5,68 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="x.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <h1>My Projects</h1>
-        
-        <!-- Buttons Wrapper -->
-        <div class="buttons-wrapper">
-            <div class="buttons">
-                <button onclick="showProject('all')">All Projects</button>
-                <button onclick="showProject('fullstack')">Full Stack</button>
-                <button onclick="showProject('ml')">Machine Learning</button>
-                <button onclick="showProject('android')">Android Apps</button>
-                <button onclick="showProject('react')">React Projects</button>
-                <button onclick="showProject('basicweb')">Basic Web</button>
-            </div>
-        </div>
 
-        <!-- Project Wrapper -->
-        <div class="project-wrapper">
-            <!-- Project Card -->
-            <div class="project-card all fullstack">
-                <div class="project-image">
-                    <img src="x.png" alt="Project 1">
-                    <div class="project-overlay">
-                        <button class="icon-btn">🔗</button>
-                        <button class="icon-btn">🎥</button>
-                    </div>
-                </div>
-                <h2>Instagram MERN</h2>
-                <p>Tech Stack: ReactJS, Redux, NodeJS, MongoDB, TailwindCSS</p>
-            </div>
+    <h1>My Projects</h1>
 
-            <!-- Additional Project Cards (Copy and modify as needed) -->
-            <div class="project-card all react">
-                <div class="project-image">
-                    <img src="x.png" alt="Project 2">
-                    <div class="project-overlay">
-                        <button class="icon-btn">🔗</button>
-                        <button class="icon-btn">🎥</button>
-                    </div>
-                </div>
-                <h2>ResumeGen</h2>
-                <p>Tech Stack: JavaScript, ReactJS, Chakra UI, ContextAPI</p>
-            </div>
-
-            <!-- Additional Project Cards (Copy and modify as needed) -->
-            <div class="project-card all react">
-                <div class="project-image">
-                    <img src="x.png" alt="Project 3">
-                    <div class="project-overlay">
-                        <button class="icon-btn">🔗</button>
-                        <button class="icon-btn">🎥</button>
-                    </div>
-                </div>
-                <h2>ResumeGen</h2>
-                <p>Tech Stack: JavaScript, ReactJS, Chakra UI, ContextAPI</p>
-            </div>
-
-        </div>
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" onclick="filterProjects('mern')">MERN Stack</button>
+        <button class="filter-btn" onclick="filterProjects('mobile')">Mobile</button>
+        <button class="filter-btn" onclick="filterProjects('aiml')">AI/ML</button>
+        <button class="filter-btn" onclick="filterProjects('basic-web')">Basic Web</button>
     </div>
 
-    <!-- Script to Filter Projects Based on Selection -->
+    <div class="projects">
+        <div class="project-card mern">
+            <img src="p.png" alt="Project 1">
+            <p>Instagram MERN - A social media clone using MERN stack.</p>
+        </div>
+        <div class="project-card mern">
+            <img src="p.png" alt="Project 2">
+            <p>Flipkart MERN - An e-commerce platform clone using MERN stack.</p>
+        </div>
+        <div class="project-card mobile">
+            <img src="p.png" alt="Project 3">
+            <p>Weather App - A mobile app to check weather forecasts.</p>
+        </div>
+        <div class="project-card aiml">
+            <img src="p.png" alt="Project 4">
+            <p>AI Chatbot - A chatbot using NLP and Machine Learning.</p>
+        </div>
+        <div class="project-card basic-web">
+            <img src="p.png" alt="Project 5">
+            <p>Personal Blog - A simple blog website.</p>
+        </div>
+
+    </div>
+
     <script src="app.js"></script>
+
 </body>
 </html>
