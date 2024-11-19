@@ -9,44 +9,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">TestimonyHub</a>
-            
-            <div class="nav-links">
-                <a href="index.html" onclick="toggleMenu()">Home</a>
-                <a href="#about" onclick="toggleMenu()">About Us</a>
-                <a href="#plans" onclick="toggleMenu()">Plans</a>
-                <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
-                <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+    <div id="home">
+        <div id="particles-js"></div>
+        <nav>
+            <div class="container nav-container">
+                <a href="index.html" class="logo">TestimonyHub</a>
+                
+                <div class="nav-links">
+                    <a href="index.html" onclick="toggleMenu()">Home</a>
+                    <a href="#about" onclick="toggleMenu()">About Us</a>
+                    <a href="#plans" onclick="toggleMenu()">Plans</a>
+                    <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
+                    <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+                </div>
+    
+                <div class="nav-buttons">
+                    <a href="#" class="btn">Login</a>
+                    <a href="#" class="btn" style="background: transparent; border: 1px solid var(--primary-color)">Sign Up</a>
+                </div>
+    
+                <!-- Hamburger icon for mobile -->
+                <div class="mobile-nav-toggle">☰</div>
             </div>
-
-            <div class="nav-buttons">
-                <a href="#" class="btn">Login</a>
-                <a href="#" class="btn" style="background: transparent; border: 1px solid var(--primary-color)">Sign Up</a>
-            </div>
-
-            <!-- Hamburger icon for mobile -->
-            <div class="mobile-nav-toggle">☰</div>
-
-        </div>
-    </nav>
-    <!-- <section id="home"> -->
+        </nav>
         <div class="hero">
             <div class="container hero-content">
                 <h1>Quick and Easy Testimonials</h1>
                 <p>It allows users to automate the gathering of feedback, organize it in a central location, and share it seamlessly across various platforms.</p>
+                <div class="features">
+                    <div class="feature">
+                        <img src="img/about.jpg" alt="Feature 1" />
+                        <h3>Effortless Feedback</h3>
+                        <p>Collect and manage feedback with just a few clicks, saving you time and effort.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="img/about.jpg" alt="Feature 2" />
+                        <h3>Centralized Dashboard</h3>
+                        <p>Access all your testimonials in one organized and easy-to-navigate platform.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="img/about.jpg" alt="Feature 3" />
+                        <h3>Seamless Sharing</h3>
+                        <p>Share testimonials across social media, websites, and emails with ease.</p>
+                    </div>
+                </div>                
                 <a href="#" class="btn">Start for free</a>
             </div>
         </div>
-    <!-- </section> -->
+    </div>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <!-- <p>Information about us.</p> -->
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                At <strong>TestimonyHub</strong>, we believe in the power of feedback. Our mission is to help businesses and individuals gather, organize, and share testimonials seamlessly, building trust and credibility along the way.
+            </p>
+        </div>
+        
+        
     </section>
+    
 
     <section id="plans">
         <h2>Plans Section</h2>
@@ -228,6 +254,9 @@
         </div>
       </footer>      
 
+    <script src="particles.min.js"></script>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
