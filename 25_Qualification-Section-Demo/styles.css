@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #060208;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: #e5e5e5;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #7d19b7;
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  padding-top: 20px;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1.5px;
+  height: 100%;
+  background-color: #9f67bf; /* Purple line */
+  transform: translateX(-50%);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 45%;
+  margin-bottom: 5px;
+}
+
+.card.left {
+  justify-content: flex-end;
+  margin-right: auto;
+  padding: 2px;
+}
+
+.card.right {
+  justify-content: flex-start;
+  margin-left: auto;
+  padding: 2px;
+}
+
+.icon-left {
+  position: absolute;
+  left: 400px; /* Aligns the icon on the line */
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: #7d19b7; /* Purple icons */
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-right{
+  position: absolute;
+  left: -35px; /* Aligns the icon on the line */
+  transform: translateX(-50%);
+  font-size: 2em;
+  color: #7d19b7; /* Purple icons */
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card.left .icon {
+  top: 20px; /* Adjust the vertical position for left cards */
+}
+
+.card.right .icon {
+  top: 20px; /* Adjust the vertical position for right cards */
+}
+
+.details {
+  text-align: left;
+  padding: 5px;
+}
+
+.details h3 {
+  margin: 1px;
+  font-size: 1.2em;
+  color: #333;
+  padding: 3px;
+}
+
+.details p {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #666;
+  padding: 3px;
+}
+
+.details ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.details ul li {
+  font-size: 0.9em;
+  margin: 5px 0;
+}
