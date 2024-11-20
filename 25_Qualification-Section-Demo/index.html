@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience & Education Timeline</title>
+  <!-- Font Awesome Link -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Experience</h1>
+    <div class="tabs">
+      <button id="experience-btn" class="tab active">Experience</button>
+      <button id="education-btn" class="tab">Education</button>
+    </div>
+    <div class="timeline">
+      <div class="line"></div>
+      <div id="experience" class="content active">
+        <div class="card left">
+          <div class="icon-left"><i class="fas fa-briefcase"></i></div> <!-- Suitcase Icon -->
+          <div class="details">
+            <h3>Solar Ladder</h3>
+            <p>Full Stack Developer | Jul 2023 - Present</p>
+            <ul>
+              <li>Integrated Facebook leads using webhook and OAuth.</li>
+              <li>Led Node.js migration with feature updates and bug fixes.</li>
+              <li>Crafted codemod scripts for seamless migrations.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card right">
+          <div class="icon-right"><i class="fas fa-briefcase"></i></div> <!-- Suitcase Icon -->
+          <div class="details">
+            <h3>Panchavaktra Advisory LLP</h3>
+            <p>Full Stack Developer Intern | Dec 2022 - Feb 2023</p>
+            <ul>
+              <li>Directed development of B2B platform features.</li>
+              <li>Engineered lead integration systems with Node.js and Firebase.</li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div id="education" class="content">
+        <div class="card left">
+          <div class="icon-left"><i class="fas fa-graduation-cap"></i></div> <!-- Graduation Hat Icon -->
+          <div class="details">
+            <h3>XYZ University</h3>
+            <p>B.E. in Computer Science | 2020 - 2024</p>
+            <ul>
+              <li>Graduated with honors in Full Stack Development.</li>
+              <li>Top 5% in class with a focus on web technologies.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card right">
+          <div class="icon-right"><i class="fas fa-graduation-cap"></i></div> <!-- Graduation Hat Icon -->
+          <div class="details">
+            <h3>ABC School</h3>
+            <p>High School | 2018 - 2020</p>
+            <ul>
+              <li>Achieved top scores in Computer Science and Mathematics.</li>
+              <li>Participated in national-level coding competitions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
