@@ -2,8 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #f1f2f3;
   color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -155,4 +159,122 @@ h1 {
 .details ul li {
   font-size: 0.9em;
   margin: 5px 0;
+}
+
+
+
+/* Media Queries */
+
+/* Small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .timeline .card {
+    width: 100%;
+    float: none;
+    margin: 15px 0;
+  }
+
+  .timeline .line {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .timeline .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centers text */
+    margin: 15px auto; /* Centers the card itself */
+  }
+
+  .timeline .card .details {
+    width: 100%; /* Ensure content takes up full width */
+  }
+}
+
+/* Remove icons for small mobile screens (below 768px) */
+@media (max-width: 768px) {
+  .timeline .icon-left, 
+  .timeline .icon-right {
+    display: none; /* Completely hide the icons */
+  }
+
+  .timeline .card {
+    width: 90%; /* Increase the width for small screens */
+    margin: 20px auto; /* Center the card */
+  }
+}
+
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .container {
+    padding: 15px;
+  }
+
+  .timeline .card {
+    width: 90%;
+    float: none;
+    margin: 10px auto;
+  }
+
+  .tabs button {
+    font-size: 14px;
+  }
+}
+
+/* Remove icons and increase card width for screen widths between 768px and 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .timeline .card {
+    width: 90%; /* Increase card width to occupy more space */
+    margin: 20px auto; /* Center the card */
+  }
+
+  .timeline .icon-left, 
+  .timeline .icon-right {
+    display: none; /* Hide the icons */
+  }
+}
+
+/* Large devices (small desktops, 900px to 1200px) */
+@media (min-width: 900px) and (max-width: 1200px) {
+  .timeline .card {
+    width: 45%;
+  }
+}
+
+/* Add animation for sliding cards */
+@keyframes slideFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for cards when they appear */
+.timeline .card {
+  opacity: 0; /* Start as invisible */
+  transform: translateY(-30px); /* Start slightly above */
+  animation: slideFromTop 0.8s ease-out forwards; /* Animate to position */
+}
+
+/* Add delay to each card */
+.timeline .card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.timeline .card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.timeline .card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.timeline .card:nth-child(4) {
+  animation-delay: 0.8s;
 }
