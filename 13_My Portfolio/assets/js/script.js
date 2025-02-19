@@ -37,9 +37,6 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    
-
-
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
     strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
@@ -49,23 +46,5 @@ var typed = new Typed(".typing-text", {
     backDelay: 500,
 });
 // <!-- typed js effect ends -->
-
-
-
-
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
-
-
-
-
 
 
