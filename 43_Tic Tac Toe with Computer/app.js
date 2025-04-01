@@ -143,7 +143,6 @@ TicTacToe.prototype.isGameFinished = function(){
 	}
 	return true;
 }
-
 //returns an array that represents a cell in the board
 TicTacToe.prototype.getBestMove = function(){
 	var bestMove = {
