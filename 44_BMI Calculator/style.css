@@ -100,23 +100,24 @@ body{
 button{
     cursor: pointer;
     color: #fff;
-    background-color: rgb(125, 91, 157);
+    background-color: #000269;
     font-size: 16px;
-    border-radius: 7px;
+    border-radius: 15px;
     padding: 12px 0;
-    width: 100%;
+    width: 70%;
     border: none;
     outline: none;
     transition: all 0.5s;
     margin-top: 5px;
 }
 button:hover{
-    background-color: blueviolet;
+    background-color: #1d20e8;
 }
 .clear{
     cursor: pointer;
     color: #fff;
-    background-color: rgb(125, 91, 157);
+    /* background-color: rgb(125, 91, 157);      #30cfd0 0%, #330867 */
+    background-color: #000269;
     font-size: 16px;
     border-radius: 7px;
     padding: 5px 0;
@@ -140,11 +141,12 @@ button:hover{
     font-size:30px ;
     font-weight:500 ;
     margin-bottom: 15px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(125, 91, 157);
+    width: 35%;
+    color: rgb(255, 255, 255);
+    background-color: #0f11a6;
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 55px;
+    border-radius: 20px;
     margin-bottom: 25px;
 }
 .comment{
