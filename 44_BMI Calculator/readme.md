@@ -4,7 +4,10 @@ I developed this **BMI Calculator** project to practice my JavaScript skills and
 
 ## Demo
 
-![Screenshot 2024-10-16 121730](https://github.com/user-attachments/assets/d3a963cc-9844-4868-9c81-de8280a2668b)
+![Screenshot (1195)](https://github.com/user-attachments/assets/7073023b-cbac-42d0-8cc0-e01552c2b04a)
+
+## Live :
+https://mybmi-calculator-ten.vercel.app/
 
 ## Features
 
